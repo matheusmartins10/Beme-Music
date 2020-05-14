@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 16px;
+  color: #252525;
+  font-family: 'Roboto', sans-serif;
+}
+
+.estrutura {
+  background: #606060;
+  color: #fff;
+}
+
+.estrutura .header {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.estrutura .header .logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.estrutura .header .menu-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.estrutura .header .menu-nav ul li a {
+  padding: 10px;
+  color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.estrutura .header .menu-nav ul li a:hover {
+  color: #3CEB70;
+}
+
+.main {
+  background: #f4f4f4;
+}
+
+.main .main-container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .main-container .music img {
+  width: 500px;
+  height: 80vh;
+}
+
+@media (max-width: 540px) {
+  .main .main-container .music img {
+    display: none;
+  }
+}
+
+.main .main-container .main-text {
+  width: 400px;
+  padding: 10px;
+}
+
+.main .main-container .main-text h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #3CEB70;
+}
+
+.main .main-container .main-text P {
+  font-size: 18px;
+  letter-spacing: 1.115px;
+  font-style: italic;
+}
+
+.main .main-container .main-text span {
+  font-style: normal;
+  font-weight: bold;
+}
+
+@media (max-width: 540px) {
+  .main .main-container .main-text {
+    margin: 60px auto;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=main.css.map */

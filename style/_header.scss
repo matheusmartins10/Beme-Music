@@ -1,0 +1,39 @@
+$text-color: #3CEB70;
+$back-color: #606060;
+@mixin flex(){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.estrutura{
+  background: $back-color;
+  color: #fff;
+  .header{
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 30px;
+      @include flex();
+      .logo img{
+          width: 50px;
+          height: 50px;
+      }
+
+      .menu-nav ul{
+          @include flex();
+          li{
+           
+              a{
+                  padding: 10px;
+                  color: #fff;
+                  transition: .3s;
+                  font-size: 18px;
+                  text-transform: uppercase;
+                  letter-spacing: 1px;
+              }
+              a:hover{
+                  color: $text-color;
+              }
+          }
+      }
+  }
+}
